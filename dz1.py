@@ -19,8 +19,7 @@ if __name__ == '__main__':
 
     assert parse('http://?name=Dima&color=purple') == {'name': 'Dima', 'color': 'purple'}
     assert parse('http://?name=Dima') == {'name': 'Dima'}
-    assert parse('https://www.google.com/search?client=firefox-b-e&q=parser') == {'client': 'firefox-b-e',
-                                                                                  'q': 'parser'}
+    assert parse('https://www.google.com/search?client=firefox-b-e&q=parser') == {'client': 'firefox-b-e',                                                                             'q': 'parser'}
     assert parse('http://example.com/?&') == {}
     assert parse('http://www.example.org/default.html?ct=32&op=92&item=98') == {'ct': '32', 'op': '92', 'item': '98'}
 
